@@ -73,7 +73,15 @@ The project follows standard SAP clean-code and modularization principles, separ
 │ Semester, Marks, Attendance %, Status             │
 └───────────────────────────────────────────────────┘
 ```
-[![Architecture diagram of palurujaswanth/student-management-transcript-system](https://gitdiagram.com/palurujaswanth/student-management-transcript-system/diagram.png)](https://gitdiagram.com/palurujaswanth/student-management-transcript-system?utm_source=readme&utm_medium=picture)
+<p align="center">
+  <a href="https://gitdiagram.com/palurujaswanth/student-management-transcript-system">
+    <img
+      src="https://gitdiagram.com/palurujaswanth/student-management-transcript-system/diagram.png"
+      alt="Architecture Diagram"
+      width="700"
+    />
+  </a>
+</p>
 ---
 
 ## ✨ Key Features
