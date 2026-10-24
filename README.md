@@ -79,10 +79,11 @@ The project follows standard SAP clean-code and modularization principles, separ
       src="diagram (5).png"
       alt="Architecture Diagram"
       width="700"
+      height="400"
     />
   </a>
 </p>
----
+
 
 ## ✨ Key Features
 
@@ -99,7 +100,6 @@ The project follows standard SAP clean-code and modularization principles, separ
   - Text node segregation isolating student personal info (`IS_STUDENT_HEADER`) from repeated course results.
   - Multi-column line type (`L_DATA`) aligning column headers with looped rows (`IT_STUDENT_MARKS INTO WA_MARKS`).
 
----
 
 ## 🗄 Database Schema (DDIC)
 
@@ -127,8 +127,6 @@ The application relies on two custom Data Dictionary tables created in transacti
 | `ATT_PCT` | | `DEC5_2` | `DEC5_2` | Attendance Percentage |
 | `RESULTS` | | `CHAR10` | `CHAR10` | Semester Result (`PASS` / `FAIL`) |
 
----
-
 ## 📂 Program Structure & Modularization
 
 The module pool program **`Z_STUDENT_MAJOR_PROG`** (Type M) is structured across dedicated includes:
@@ -152,8 +150,6 @@ Z_STUDENT_MAJOR_PROG
   * `display_marks_popup`: Renders modal drill-down for relational semester data.
   * `trigger_smartform`: Dynamically fetches the generated function module name and invokes SmartForm printing.
 
----
-
 ## 🖥 Interactive UI Workflow
 
 ### Screen 100: Input & Parameter Selection
@@ -170,8 +166,6 @@ Z_STUDENT_MAJOR_PROG
 
 ### Semester Results Modal Popup
 * Clicking any roll number hotspot or selecting a row and clicking **Results** launches a responsive modal dialog (`REUSE_ALV_GRID_DISPLAY`) isolated to lines 6–18 and columns 15–95.
-
----
 
 ## 🖨 SmartForm Integration (`Z_STUDENT_TRANSCRIPT_FORM`)
 
@@ -190,8 +184,6 @@ The official university transcript is produced via SAP SmartForms:
     * `Attendance %` (3.5 cm)
     * `Result` (3.5 cm)
 
----
-
 ## 🛠 Technical Challenges & Architectural Solutions
 
 | Challenge Encountered | Root Cause | Solution Implemented |
@@ -202,9 +194,8 @@ The official university transcript is produced via SAP SmartForms:
 | **ALV Column Text Truncation** | Default `cwidth_opt` collapsed short text fields to their minimum character length. | Set explicit `outputlen` parameters across all catalog columns and removed restrictive width constraints. |
 | **SmartForm Header / Marks Misalignment** | Semester performance items were referenced inside static text blocks outside the Table loop. | Restructured form layout by isolating student header text and rendering academic items inside Table node loops with line type `L_DATA`. |
 
----
 
-## 🚀 Installation & Deployment
+## Installation & Deployment
 
 ### Prerequisites
 * SAP NetWeaver AS ABAP 7.40 or higher / SAP S/4HANA.
@@ -234,6 +225,6 @@ The official university transcript is produced via SAP SmartForms:
 
 ---
 
-## 👨‍💻 Author & Contributions
+##  Author & Contributions
 * **Developer:** Paluru Jaswanth
 * **Specialization:** SAP ABAP Development, Dynpro UI Engineering, S/4HANA Migrations
