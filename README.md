@@ -73,7 +73,9 @@ The project follows standard SAP clean-code and modularization principles, separ
 │ Semester, Marks, Attendance %, Status             │
 └───────────────────────────────────────────────────┘
 ```
-
+```
+[![Architecture diagram of palurujaswanth/student-management-transcript-system](https://gitdiagram.com/palurujaswanth/student-management-transcript-system/diagram.png)](https://gitdiagram.com/palurujaswanth/student-management-transcript-system?utm_source=readme&utm_medium=picture)
+```
 ---
 
 ## ✨ Key Features
@@ -227,5 +229,5 @@ The official university transcript is produced via SAP SmartForms:
 ---
 
 ## 👨‍💻 Author & Contributions
-* **Developer:** Paluru Jaswanth Pranay
+* **Developer:** Paluru Jaswanth
 * **Specialization:** SAP ABAP Development, Dynpro UI Engineering, S/4HANA Migrations
