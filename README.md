@@ -74,9 +74,9 @@ The project follows standard SAP clean-code and modularization principles, separ
 └───────────────────────────────────────────────────┘
 ```
 <p align="center">
-  <a href="https://gitdiagram.com/palurujaswanth/student-management-transcript-system">
+  <a>
     <img
-      src="https://gitdiagram.com/palurujaswanth/student-management-transcript-system/diagram.png"
+      src="diagram (5).png"
       alt="Architecture Diagram"
       width="700"
     />
