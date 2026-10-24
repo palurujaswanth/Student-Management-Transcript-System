@@ -79,7 +79,7 @@ The project follows standard SAP clean-code and modularization principles, separ
       src="diagram (5).png"
       alt="Architecture Diagram"
       width="700"
-      height="400"
+      height="600"
     />
   </a>
 </p>
